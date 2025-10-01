@@ -16,6 +16,9 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="profile.jpg">
 
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -31,10 +34,22 @@
       scroll-behavior: smooth;
     }
     header {
-      background: var(--isu-blue);
+      position: relative;
+      background: url('banner.png') center/cover no-repeat;
       color: white;
       padding: 6rem 1rem;
       text-align: center;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* overlay for contrast */
+      z-index: 1;
+    }
+    header > * {
+      position: relative;
+      z-index: 2;
     }
     header h1 {
       font-size: 2.5rem;
@@ -61,6 +76,11 @@
     }
     .card {
       border-radius: 1rem;
+    }
+    section h2 {
+      border-bottom: 3px solid var(--isu-gold);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
     footer {
       padding: 1rem;
@@ -139,7 +159,7 @@
         <div class="col-md-4">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title">EUCOM Chiefs of Mission Conference</h3>
+              <h3 class="card-title"><i class="bi bi-briefcase"></i> EUCOM Chiefs of Mission Conference</h3>
               <p class="card-text">Conference for all European U.S. Ambassadors.</p>
               <ul>
                 <li>Assisted in planning the conference</li>
@@ -152,7 +172,7 @@
         <div class="col-md-4">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title">Aid Runs to Ukraine</h3>
+              <h3 class="card-title"><i class="bi bi-truck"></i> Aid Runs to Ukraine</h3>
               <p class="card-text">Drove vans of humanitarian supplies to Ukraine.</p>
               <ul>
                 <li>Delivered aid</li>
@@ -165,7 +185,7 @@
         <div class="col-md-4">
           <div class="card h-100">
             <div class="card-body">
-              <h3 class="card-title">Child Youth and Development Project</h3>
+              <h3 class="card-title"><i class="bi bi-people"></i> Child Youth and Development Project</h3>
               <p class="card-text">Program that helped youth during the summer.</p>
               <ul>
                 <li>Created the Boys Club</li>
@@ -214,6 +234,10 @@
       <p>Email: <span id="email">dariuzsd1@yahoo.com</span></p>
       <a id="mailLink" href="mailto:dariuzsd1@yahoo.com" class="btn btn-success m-1"><i class="bi bi-envelope"></i> Email</a>
       <button id="copyEmailBtn" class="btn btn-secondary m-1"><i class="bi bi-clipboard"></i> Copy email</button>
+      <div class="mt-3">
+        <a href="https://github.com/dariuzsd1/darius.github.io" target="_blank" class="btn btn-dark m-1"><i class="bi bi-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" class="btn btn-primary m-1"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      </div>
     </section>
 
     <!-- Edit Checklist -->
