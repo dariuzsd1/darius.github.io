@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <!--
+    Personal Website for Darius Dantzler
+    Unofficial student page for study use only.
+    Requirements: Single file, Bootstrap 5, Bootstrap Icons, accessibility, ISU-inspired colors.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Darius Dantzler - ISU MSS 2026</title>
+  <meta name="description" content="Unofficial personal page of Darius Dantzler, MSS 2026 student at the International Space University. Focused on Space Policy and Law.">
+  <meta name="author" content="Darius Dantzler">
+  <meta property="og:title" content="Darius Dantzler - ISU MSS 2026">
+  <meta property="og:description" content="Unofficial personal page of Darius Dantzler, MSS 2026 student at the International Space University. Focused on Space Policy and Law.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="profile.jpg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --isu-blue: #0b3d91;
+      --isu-gold: #f0b429;
+      --isu-ink:  #0d1b2a;
+      --isu-sky:  #e6f1ff;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: var(--isu-blue);
+      color: white;
+      padding: 6rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--isu-gold);
+      color: black;
+      padding: 8px;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    .timeline {
+      border-left: 3px solid var(--isu-gold);
+      padding-left: 1rem;
+    }
+    .timeline-entry {
+      margin-bottom: 1.5rem;
+    }
+    .card {
+      border-radius: 1rem;
+    }
+    footer {
+      padding: 1rem;
+      text-align: center;
+      background: var(--isu-ink);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Darius Dantzler</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#edit-checklist">Edit</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-outline-light btn-sm" aria-label="Toggle theme"><i class="bi bi-moon-stars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header>
+    <img src="profile.jpg" alt="Profile photo of Darius Dantzler" class="rounded-circle mb-3" width="150" height="150" onerror="this.outerHTML='<p>[Add profile.jpg]</p>';">
+    <h1>Darius Dantzler</h1>
+    <p class="lead">I am a student at the International Space University looking for new opportunities in Space Policy and Law.</p>
+    <div class="mt-3">
+      <a href="#projects" class="btn btn-light m-1">Projects</a>
+      <a href="#cv" class="btn btn-warning m-1">CV</a>
+      <a href="#contact" class="btn btn-light m-1">Contact</a>
+    </div>
+    <p class="mt-3"><small>Unofficial student page. “International Space University” named here for study use only.</small></p>
+  </header>
+
+  <main id="main" class="container my-5">
+
+    <!-- About -->
+    <section id="about" class="mb-5">
+      <h2>About</h2>
+      <p>MSS 2026 - Space Policy and Entrepreneurship Track<br>Strasbourg, France</p>
+      <h3>Focus</h3>
+      <ul>
+        <li>Space Policy</li>
+        <li>Space Law</li>
+        <li>Space Defense</li>
+        <li>Space Cooperation</li>
+        <li>Space Development</li>
+      </ul>
+      <h3>Tools</h3>
+      <ul>
+        <li>Word</li><li>PowerPoint</li><li>Canva</li><li>GitHub</li>
+        <li>ChatGPT</li><li>Google Scholar</li><li>Gemini</li><li>Excel</li>
+      </ul>
+      <h3>Languages</h3>
+      <p>English (Native), German (Intermediate), Russian (Beginner)</p>
+      <h3>Interests</h3>
+      <p>History, Traveling, Debate, Strategy</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-5">
+      <h2>Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">EUCOM Chiefs of Mission Conference</h3>
+              <p class="card-text">Conference for all European U.S. Ambassadors.</p>
+              <ul>
+                <li>Assisted in planning the conference</li>
+                <li>Coordinated with State Department</li>
+                <li>Wrote agenda</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Aid Runs to Ukraine</h3>
+              <p class="card-text">Drove vans of humanitarian supplies to Ukraine.</p>
+              <ul>
+                <li>Delivered aid</li>
+                <li>Supported logistics</li>
+                <li>Helped refugees</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">Child Youth and Development Project</h3>
+              <p class="card-text">Program that helped youth during the summer.</p>
+              <ul>
+                <li>Created the Boys Club</li>
+                <li>Created the Science Club</li>
+                <li>Ran Science Week</li>
+                <li>Assisted on Field Trips</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="mb-5">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-entry">
+          <h3>Graduate Student, ISU MSS 2026</h3>
+          <p><em>Strasbourg, France — 2026</em></p>
+          <p>Focus on Space Policy, Law, and Entrepreneurship.</p>
+        </div>
+        <div class="timeline-entry">
+          <h3>Volunteer, United States European Command</h3>
+          <p><em>Stuttgart — 2021–2024</em></p>
+          <p>Interdepartmental intern manager, congressional affairs, Judge Advocate, State Department.</p>
+        </div>
+        <div class="timeline-entry">
+          <h3>Voice 360 Intern</h3>
+          <p><em>Ukraine — 2022–2025</em></p>
+          <p>Assisted in providing a voice to Ukrainians and delivering humanitarian supplies.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="mb-5">
+      <h2>CV</h2>
+      <div id="cvNote">Add <code>cv.pdf</code> to enable the CV button.</div>
+      <a id="cvBtn" href="cv.pdf" target="_blank" class="btn btn-primary" style="display:none;">Open CV</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mb-5">
+      <h2>Contact</h2>
+      <p>Email: <span id="email">dariuzsd1@yahoo.com</span></p>
+      <a id="mailLink" href="mailto:dariuzsd1@yahoo.com" class="btn btn-success m-1"><i class="bi bi-envelope"></i> Email</a>
+      <button id="copyEmailBtn" class="btn btn-secondary m-1"><i class="bi bi-clipboard"></i> Copy email</button>
+    </section>
+
+    <!-- Edit Checklist -->
+    <section id="edit-checklist" class="mb-5">
+      <h2>Edit Checklist</h2>
+      <ul>
+        <li>Replace or update profile.jpg</li>
+        <li>Add cv.pdf at repo root</li>
+        <li>Add links to projects if available</li>
+        <li>Update contact info if it changes</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Darius Dantzler — Unofficial student page</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Theme toggle with localStorage
+    const toggleBtn = document.getElementById("themeToggle");
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      document.documentElement.setAttribute("data-bs-theme", storedTheme);
+    }
+    toggleBtn.addEventListener("click", () => {
+      const currentTheme = document.documentElement.getAttribute("data-bs-theme");
+      const newTheme = currentTheme === "light" ? "dark" : "light";
+      document.documentElement.setAttribute("data-bs-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+    });
+
+    // CV check
+    fetch("cv.pdf", { method: "HEAD" }).then(res => {
+      if (res.ok) {
+        document.getElementById("cvBtn").style.display = "inline-block";
+        document.getElementById("cvNote").style.display = "none";
+      }
+    }).catch(() => {});
+
+    // Contact email functions
+    const email = "dariuzsd1@yahoo.com";
+    document.getElementById("email").textContent = email;
+    document.getElementById("mailLink").href = "mailto:" + email;
+    document.getElementById("copyEmailBtn").addEventListener("click", () => {
+      navigator.clipboard.writeText(email).then(() => {
+        const btn = document.getElementById("copyEmailBtn");
+        const old = btn.innerHTML;
+        btn.innerHTML = '<i class="bi bi-check2"></i> Copied!';
+        setTimeout(() => btn.innerHTML = old, 1500);
+      });
+    });
+
+    // Reduce motion preference
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.style.scrollBehavior = "auto";
+    }
+  </script>
+</body>
+</html>
