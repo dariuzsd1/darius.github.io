@@ -1,0 +1,18 @@
+{
+  "article_id": "10293",
+  "metadata": {
+    "title": "Understanding the Basics of Web Hosting",
+    "author": "Jane Doe",
+    "publish_date": "2026-01-15",
+    "category": "Education"
+  },
+  "content": {
+    "summary": "A beginner's guide to how servers store website files.",
+    "body_text": "Web hosting is a service that allows organizations and individuals to post a website or web page onto the Internet...",
+    "tags": ["Web Dev", "Hosting", "Beginner"]
+  },
+  "media": {
+    "hero_image_url": "https://example.com/images/server-room.jpg",
+    "image_alt_text": "A photograph of a modern data center with blue lights."
+  }
+}
